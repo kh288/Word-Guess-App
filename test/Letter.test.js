@@ -2,10 +2,12 @@ const Letter = require("../lib/Letter");
 
 describe("Letter class", () => {
   it("Characters that aren't digits or letters are instantly visible", () => {
+
     expect(new Letter("?").visible).toBe(true); 
   });
   
   it("Characters that are digits or letters are instantly not visible", () => {
+
     expect(new Letter("a").visible).toBe(false); 
   });
 
